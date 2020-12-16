@@ -2,24 +2,63 @@
   min-width: 1100px;
   /* we don't know how to make mobile versions of websites yet, */
   /* so here we've set a minimum page width */
-  max-width: 1600px;
+  /*max-width: 1600px;
   /* here we've set a maximum page width */
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* parameters for the header section */
+*{
+  margin: 0;
+  padding: 0;
 }
 
+.header {
+  height: 100vh;
+ /* min-height: 600px;
+  max-height: 756px;
+  /* parameters for the header section */
+margin-bottom: 100px;
+width: 90%;
+margin: auto;
+position: relative;
+
+}
+
+
+.flex-colomn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__title{
+  position: absolute;
+  left: 64px;
+  z-index: 2;
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+}
+
+.logo_place_header{
+  position: absolute;
+  top:30px;
+  left: 64px;
+  z-index: 2;
+  
+}
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 0;
 }
 
 /* including elements with key-value modifiers */
@@ -29,3 +68,221 @@
   margin-right: 0;
   margin-top: 80px;
 }
+.header__main-illustration{
+  position: absolute;
+  bottom: 0;
+  right:0; 
+  z-index: 1;
+  height: 608px;
+  width: 765px;
+}
+.header__subtitle{
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  width: 338px;
+  z-index: 2;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+ 
+
+ .flex-row{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+.description{
+  
+  min-width: 784px;
+ /* height: 100vh;*/
+  margin: 100px auto;
+}
+
+.content{
+margin: auto;
+}
+
+.two-columns_brief{
+  width: 800px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.two-columns{
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+.two-columns_main-text{
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+.two-columns_paragraph{
+  margin-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+  font-style: normal;
+}
+
+.digits{
+ text-align: center;
+  margin: 100px auto;
+}
+.section-title{
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-subtitle{
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.table{
+  margin: auto;
+  width: 1100px;
+  flex-wrap: wrap;
+}
+.table_cell{
+ 
+  box-sizing: border-box;
+  text-align: left;
+}
+.table_cell_place_digits{
+  width: 250px;
+}
+.table_heading{
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.table_text{
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal; 
+}
+.feynman{
+  width: 80%;
+  height: 790px;
+  background-image: url(../images/feynman.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 867px 637px;
+  text-align: center;
+  margin: auto;
+}
+
+.feynman_title{
+  width: 775px;
+  margin: auto;
+  margin-top: 100px;
+  font-size: 120px;
+  margin-bottom: 70px;
+  line-height: 1.15;
+  font-weight: bold;
+
+}
+
+.feynman_subtitle{
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+}
+
+
+.feynman_link{
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  position: relative;
+  left:550px;
+  height: 50%;
+}
+
+.kaufman{
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+  margin: 90px auto;
+  
+  background: url(../images/kaufman-triangle.svg) 0 0 no-repeat;
+  background-position: bottom right;
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+}
+
+
+.table_cell_place_kaufman{
+  width: 200px;
+}
+
+.footer{
+  background-color: #1f1f1f;
+  color:  #f2f2f2;
+  width: 90%;
+  margin: auto;
+  flex-basis: 711px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  
+}
+
+
+.footer_author{
+ margin: 18px 0;
+}
+
+
+.footer_columns{
+
+  width: 100%;
+  justify-content: space-between;
+}
+
+.fa {
+
+  font-size: 80px;
+ 
+ width: 16px;
+ height: 16px;
+ text-decoration: none;
+text-align: center;
+
+border-radius: 50%;
+display: inline;
+background: #f2f2f2;
+color: black;
+}
+.fa-facebook {
+  background: #f2f2f2;
+  color: black;
+}
+
+
+
+.Facebook{
+  display: inline;
+  margin:auto
+}
+
+
+.footer_social-icon{
+  margin-bottom: 15px;
+}
+
+
+
