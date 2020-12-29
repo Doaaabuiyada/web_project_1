@@ -28,10 +28,6 @@
     margin: auto;
 }
 
-* {
-    border: 2px solid red;
-}
-
 .header__title {
     margin: 0;
     z-index: 2;
