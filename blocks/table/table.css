@@ -4,7 +4,6 @@
 @import url(./_theme/table_theme_dark.css);
 @import url(./__cell/_theme/table__cell_theme_dark.css);
 .table {
-    margin: 0;
     padding: 0;
     list-style-type: none;
     margin: auto;
