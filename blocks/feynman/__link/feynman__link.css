@@ -8,4 +8,9 @@
     vertical-align: 50%;
     text-decoration: none;
     color: #2f80ed;
+    transition: text-decoration 1s linear 2s;
+}
+
+.feynman__link:hover {
+    text-decoration: underline;
 }

@@ -1,4 +1,9 @@
 .header__link {
     text-decoration: none;
     color: #2f80ed;
+    transition: text-decoration 1s linear 2s;
+}
+
+.header__link:hover {
+    text-decoration: underline;
 }
