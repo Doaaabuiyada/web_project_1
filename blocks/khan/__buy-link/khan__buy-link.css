@@ -7,4 +7,9 @@
     color: #2f80ed;
     text-decoration: none;
     margin-left: 48px;
+    transition: text-decoration 1s linear 2s;
+}
+
+.khan__buy-link:hover {
+    text-decoration: underline;
 }

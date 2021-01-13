@@ -6,8 +6,13 @@
     line-height: 30px;
     font-size: 18px;
     font-weight: normal;
+    transition: text-decoration 1s linear 2s;
 }
 
 .footer__link:active {
     color: f2f2f2;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
 }
